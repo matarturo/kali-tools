@@ -42,9 +42,8 @@ Ejecute las siguientes directivas secuenciales en la terminal de su máquina anf
 ```bash
 apt update && apt install -y docker.io
 
-docker run -d -it --net=host --name kali-tools --restart unless-stopped kalilinux/kali-rolling
+docker run -d -it --net=host --privileged --name kali-tools --restart unless-stopped kalilinux/kali-rolling
 ```
-
 ### Paso 3.2: Crear el Comando de Acceso Rápido al Subsistema
 Ejecute este bloque exacto en la terminal del host para mapear la entrada rápida:
 
