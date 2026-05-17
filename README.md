@@ -89,16 +89,20 @@ exit
 
 ### METAPAQUETES TÁCTICOS DISPONIBLES:
 
+### METAPAQUETES TÁCTICOS DISPONIBLES (EXPANDIDO):
+
 #### 1. `kali-tools-forensics` (~2.5 GB)
 *   **Especialidad:** Análisis de sistemas de archivos, forense en memoria RAM y metadatos.
 *   **Herramientas críticas incluidas:**
     *   `guymager`: Adquisición e imágenes de disco bit a bit con verificación hash.
-    *   `sleuthkit` (TSK): Análisis forense de sistemas de archivos a bajo nivel por comandos.
+    *   `sleuthkit` (`fls`, `icat`, `mmls`): Análisis forense de sistemas de archivos a bajo nivel por comandos.
     *   `autopsy`: Interfaz gráfica de análisis forense digital y correlación de líneas de tiempo.
     *   `foremost` / `scalpel`: Extracción de archivos (*file carving*) basadas en cabeceras binarias.
-    *   `volatility` / `volatility3`: Framework definitivo para análisis forense de memoria RAM.
-    *   `chntpw`: Modificación directa del registro SAM de Windows para resetear credenciales.
+    *   `volatility3` / `vol3`: Framework definitivo automatizado para análisis de volcados de memoria RAM.
+    *   `chntpw`: Modificación directa del registro SAM de Windows para resetear credenciales locales.
     *   `hashdeep` / `md5deep`: Auditoría recursiva y cálculo de hashes de integridad masivos.
+    *   `bulk_extractor`: Extracción masiva de entidades (emails, URLs, tarjetas) sin importar el sistema de archivos.
+    *   `binwalk`: Análisis, ingeniería inversa y extracción de firmas en imágenes de firmware estáticas.
 
 #### 2. `kali-tools-information-gathering` (~1.8 GB)
 *   **Especialidad:** Mapeo de red avanzado, análisis de tráfico y herramientas OSINT.
@@ -109,24 +113,32 @@ exit
     *   `nbtscan`: Escaneo y recolección de nombres NetBIOS en redes locales.
     *   `dmitry`: Recolección de información pública de hosts (Whois, subdominios, correos).
     *   `arp-scan`: Descubrimiento y mapeo de direcciones físicas MAC en la red local.
+    *   `dnsrecon`: Enumeración DNS avanzada (transferencias de zona, fuerza bruta de subdominios, registros MX).
+    *   `theharvester`: Recolección de OSINT (correos, subdominios, nombres) utilizando motores de búsqueda públicos.
+    *   `maltego`: Herramienta gráfica de minería de datos y correlación de relaciones complejas en OSINT.
+    *   `netdiscover`: Escáner pasivo/activo de direcciones de red basado en solicitudes ARP.
 
 #### 3. `kali-tools-vulnerability` (~3.2 GB)
 *   **Especialidad:** Marcos de explotación de vulnerabilidades e ingeniería inversa.
 *   **Herramientas críticas incluidas:**
-    *   `sqlmap`: Motor automatizado para detección y explotación de inyecciones SQL.
+    *   `sqlmap`: Motor automatizado para detección y explotación de inyecciones SQL en bases de datos.
     *   `nikto`: Escáner de servidores web para detectar scripts inseguros y malas configuraciones.
-    *   `ghidra`: Suite de ingeniería inversa y descompilación de binarios (NSA).
-    *   `binwalk`: Análisis y extracción de sistemas de archivos en imágenes de firmware.
-    *   `lynis`: Auditoría de seguridad exhaustiva y check de *hardening* para Unix.
+    *   `ghidra`: Suite de ingeniería inversa y descompilación de binarios (NSA) con soporte para múltiples arquitecturas.
+    *   `lynis`: Auditoría de seguridad exhaustiva y check de *hardening* para sistemas Unix/Linux.
+    *   `commix`: Framework automatizado para la prueba y explotación de vulnerabilidades de inyección de comandos web.
+    *   `searchsploit`: Buscador local en línea de comandos para la base de datos de exploits de Exploit-DB.
+    *   `unix-privesc-check`: Script táctico para enumerar vectores de escalada de privilegios en sistemas locales comprometidos.
 
 #### 4. `kali-tools-passwords` (~2.0 GB)
 *   **Especialidad:** Crackers criptográficos por GPU/CPU y generadores de diccionarios.
 *   **Herramientas críticas incluidas:**
-    *   `hashcat`: Recuperador de contraseñas por fuerza bruta basado en reglas de alta velocidad.
-    *   `john` (John the Ripper): Craqueador de hashes fuera de línea multihilo.
-    *   `hydra` / `medusa`: Ataques de fuerza bruta paralelos en caliente (SSH, FTP, RDP, etc.).
+    *   `hashcat`: Recuperador de contraseñas por fuerza bruta basado en reglas de alta velocidad (optimizado para GPU/CPU).
+    *   `john` (John the Ripper): Craqueador de hashes fuera de línea multihilo y modular.
+    *   `hydra` / `medusa`: Ataques de fuerza bruta paralelos en caliente sobre servicios (SSH, FTP, RDP, etc.).
     *   `aircrack-ng`: Suite completa de auditoría e inspección de seguridad inalámbrica Wi-Fi.
     *   `crunch`: Generador de diccionarios de contraseñas parametrizado por patrones de texto.
+    *   `cewl`: Generador de diccionarios personalizados mediante el raspado (*scraping*) de palabras clave en sitios web.
+    *   `ophcrack`: Craqueador de contraseñas de Windows basado en tablas Rainbow (*Rainbow Tables*).
 
 ---
 
