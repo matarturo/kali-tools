@@ -1,6 +1,6 @@
 # MANUAL OPERATIVO Y MATRIZ DE CONTROL: KALI-TOOLS ARSENAL
 
-Este documento detalla la arquitectura, el despliegue técnico y el catálogo de herramientas ofensivas, análisis forense y auditoría táctica de *Red Team*. El entorno está diseñado para operar de manera aislada utilizando un enfoque de **"Subsistema de Kali Linux basado en Kernel Compartido"** sobre una estación de trabajo base Ubuntu 24.04 LTS (Noble Numbat) y Debian 13 (Trixie).
+Este documento detalla la arquitectura, el despliegue técnico y el catálogo de herramientas ofensivas, análisis forense y auditoría táctica de *Red Team*. El entorno está diseñado para operar de manera aislada utilizando un enfoque de **"Subsistema de Kali Linux basado en Kernel Compartido"** sobre estaciones de trabajo base con distribuciones derivadas o nativas de la familia **Debian/Ubuntu**, validado plenamente para entornos **Ubuntu 24.04 LTS (Noble Numbat)** y **Debian 13 (Trixie)**.
 
 ---
 
@@ -16,18 +16,16 @@ Este documento detalla la arquitectura, el despliegue técnico y el catálogo de
 
 ```text
    +-------------------------------------------------------+
-
-   |            UBUNTU 24.04 LTS (Host Estable)            |
+   |                  UBUNTU / DEBIAN                      |
    |      - Producción y Enrutamiento Doméstico            |
    |      - Políticas Rígidas de Firewall (UFW)            |
    +---------------------------+---------------------------+
 
                                |
-            [ --net=host ]     | (Acceso directo a Interfaces Físicas
+          [ --net=host ]       | (Acceso directo a Interfaces Físicas
                                |  enp3s0, wlan0, mon0, etc.)
                                v
    +-------------------------------------------------------+
-
    |          SUBSISTEMA KALI-TOOLS (Contenedor)           |
    |      - Espacio de Usuario Aislado                     |
    |      - Arsenal Completo de Red Team                   |
@@ -143,5 +141,4 @@ El flujo de trabajo táctico diario queda reducido a la máxima simplicidad:
 
 ***
 
-**Desplegado para la cuenta GitHub @matarturo**
-
+**Desplegado para la cuenta GitHub**
