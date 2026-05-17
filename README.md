@@ -150,6 +150,14 @@ El flujo de trabajo táctico diario queda reducido a la máxima simplicidad:
 3. Ejecute de forma directa cualquier binario nativo indexado (`nmap`, `sqlmap`, `hashcat`, etc.).
 4. Finalizada la evaluación, digite `exit` para regresar de inmediato al entorno seguro de producción.
 
+## 7. MANTENIMIENTO Y ACTUALIZACIÓN DEL SUBSISTEMA
+
+Como el subsistema está basado en `kali-rolling`, el arsenal recibe actualizaciones de seguridad y nuevas herramientas constantemente. Para actualizar todo el entorno de un solo golpe desde la comodidad de tu terminal de Ubuntu Pro (sin interferir con tu flujo diario), ejecuta:
+
+```bash
+docker exec -it kali-tools apt update && docker exec -it kali-tools apt dist-upgrade -y
+```
+
 ***
 
 **Desplegado para la cuenta GitHub**
