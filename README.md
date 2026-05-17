@@ -1,6 +1,6 @@
 # MANUAL OPERATIVO Y MATRIZ DE CONTROL: KALI-TOOLS ARSENAL
 
-Este documento detalla la arquitectura, el despliegue técnico y el catálogo de herramientas ofensivas, análisis forense y auditoría táctica de *Red Team*. El entorno está diseñado para operar de manera aislada utilizando un enfoque de **"Subsistema de Kali Linux basado en Kernel Compartido"** sobre una estación de trabajo base Ubuntu 24.04 LTS (Noble Numbat).
+Este documento detalla la arquitectura, el despliegue técnico y el catálogo de herramientas ofensivas, análisis forense y auditoría táctica de *Red Team*. El entorno está diseñado para operar de manera aislada utilizando un enfoque de **"Subsistema de Kali Linux basado en Kernel Compartido"** sobre una estación de trabajo base Ubuntu 24.04 LTS (Noble Numbat) y Debian 13 (Trixie).
 
 ---
 
@@ -143,5 +143,5 @@ El flujo de trabajo táctico diario queda reducido a la máxima simplicidad:
 
 ***
 
-**Desplegado para la cuenta GitHub**
+**Desplegado para la cuenta GitHub @matarturo**
 
